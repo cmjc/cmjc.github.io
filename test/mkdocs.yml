@@ -1,0 +1,35 @@
+site_name: My Docs
+
+nav:
+  - Home: "index.md"
+  - Circle: "circle.md"
+  - Triangle: "triangle.md"
+  - Quadrilateral: "quadrilateral.md"
+  - Version Selector: "../"
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.superfences
+  - sane_lists
+  - footnotes
+
+plugins:
+  - search
+  - mkdocs-versioning:
+#      version: 0.0.0
+#      version_selection_page: "version_selection.md"
+#      exclude_from_nav: ["images"]
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: images/favicon.png
+  logo: 'images/clearmatics-logo.png'
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: white
