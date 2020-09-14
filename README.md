@@ -19,7 +19,7 @@ Test repo for publishing versioned docs using mkdocs-versioning plug in.
 		index.md
 ```
 
-2. Add `overrides` and `images` folder prerequisites. Note: these are our baseline configurations for an MkDocs project contianing standard `footer.html`, logo, favicon. 
+2. Add `overrides` and `images` folder prerequisites for usage of the material theme. Note: these contain a standard footer, logo, and favicon. 
 
 ```
 <project>
@@ -34,7 +34,42 @@ Test repo for publishing versioned docs using mkdocs-versioning plug in.
 3. Configure `mkdocs.yaml` to your chosen mkdocs theme and add in mkdocs-versioning plugin. The `yaml` file should look like this:
 
 ```
+site_name: My Docs
+
+nav:
+  - Home: "index.md"
+  - Circle: "circle.md"
+  - Triangle: "triangle.md"
+  - Quadrilateral: "quadrilateral.md"
+  - Version Selector: "../"
+
+markdown_extensions:
+  - pymdownx.highlight:
+      use_pygments: true
+      linenums: true
+  - pymdownx.inlinehilite
+  - admonition
+  - pymdownx.superfences
+  - sane_lists
+  - footnotes
+
+plugins:
+  - search
+  - mkdocs-versioning:
+#      version: 0.0.0
+#      version_selection_page: "version_selection.md"
+#      exclude_from_nav: ["images"]
+
+theme:
+  name: material
+  custom_dir: overrides
+  favicon: images/favicon.png
+  logo: 'images/clearmatics-logo.png'
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    primary: white
 
 ```
 
-4. Add your documentation conent to the `docs` folder as normal.
+4. Add your documentation content to the `docs` folder as normal.
