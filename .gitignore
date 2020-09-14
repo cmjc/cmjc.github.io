@@ -4,5 +4,5 @@
 *.out
 *.log
 *.toc
-../env/
+**/env/
 #site/
