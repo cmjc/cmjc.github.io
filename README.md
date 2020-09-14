@@ -59,7 +59,7 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-versioning:
-#      version: 0.0.0
+      version: 0.0.0
 #      version_selection_page: "version_selection.md"
 #      exclude_from_nav: ["images"]
 
@@ -99,6 +99,16 @@ mkdocs build
 mkdocs serve
 
 ```
+
+Run the command:
+
+```
+./serve.sh
+```
+
+This will build the project and by default serve to your local host at `http://127.0.0.1:8000/`.
+
+
 
 ## Publish by version
 

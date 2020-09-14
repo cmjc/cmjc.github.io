@@ -1,5 +1,5 @@
 #!/bin/bash
-cd <project>
+cd new-project
 python3 -m venv env
 source env/bin/activate
 pip3 install mkdocs-material
