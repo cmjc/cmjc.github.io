@@ -67,7 +67,7 @@ theme:
   name: material
   custom_dir: overrides
   favicon: images/favicon.png
-  logo: 'images/clearmatics-logo.png'
+  logo: 'images/logo.png'
   icon:
     repo: fontawesome/brands/github
   palette:
