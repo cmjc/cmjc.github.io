@@ -3,6 +3,7 @@ site_name: My Docs
 nav:
   - Home: "index.md"
   - "One": "one.md"
+  - "Two": "two.md"
   - Version Selector: "../"
 
 markdown_extensions:
@@ -18,9 +19,9 @@ markdown_extensions:
 plugins:
   - search
   - mkdocs-versioning:
-      version: 0.0.1
-#      version_selection_page: "version_selection.md"
-#      exclude_from_nav: ["images"]
+      version: 0.0.3
+      version_selection_page: "version_selection.md"
+      exclude_from_nav: ["images"]
 
 theme:
   name: material
